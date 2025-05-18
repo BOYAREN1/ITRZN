@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бизнес-информатика</title>
+    <link rel="stylesheet" href="style_naprav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-title">
+                <div class="logo">
+                    <img src="logo/system_11113922 (1).png" alt="Логотип ITRZN">
+                </div>
+                <div class="site-title">
+                    <h1>ITRZN</h1>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="main.html"><i class="fas fa-home"></i> Главная</a>
+                <a class="nav-link" href="glav-naprav.html"><i class="fas fa-code-branch"></i> Направления</a>
+                <a class="nav-link" href="glav-aby.html"><i class="fas fa-user-graduate"></i> Абитуриенту</a>
+                <a class="nav-link" href="404.html"><i class="fas fa-book-open"></i> База знаний</a>
+                <a class="nav-link" href="it-seg.html"><i class="fas fa-book-open"></i> IT-Cегодня</a>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <h1 class="intro-title">Направление 38.03.05</h1>
+            <p class="intro-subtitle">Специальность «Бизнес-информатика» — это дисциплина на стыке информационных технологий и бизнес-управления. Она предназначена для подготовки специалистов, способных анализировать бизнес-процессы, разрабатывать и внедрять ИТ-решения, которые улучшают эффективность и конкурентоспособность компаний.</p>
+        </div>
+        
+        <div class="direction-section">
+            <div class="direction-header">
+                <i class="fas fa-chart-line direction-icon"></i>
+                <h1 class="info-p">38.03.05 Бизнес-информатика</h1>
+            </div>
+            <p class="paraginf">Специальность «Бизнес-информатика» — это дисциплина на стыке информационных технологий и бизнес-управления. Она предназначена для подготовки специалистов, способных анализировать бизнес-процессы, разрабатывать и внедрять ИТ-решения, которые улучшают эффективность и конкурентоспособность компаний.</p>
+            <p class="paraginf">Студенты получают практические навыки через учебные проекты, стажировки в компаниях и работу с реальными бизнес-кейсами. Направление обучения включает изучение информационных систем, программирования, баз данных, информационной безопасности, а также курсов по управлению проектами, маркетингу и стратегическому управлению.</p>
+            <p class="paraginf">Выпускники обладают глубокими знаниями в области разработки и управления информационными системами, анализа данных и цифровой трансформации. Они умеют интегрировать технологические решения с бизнес-стратегиями, оптимизировать бизнес-процессы и внедрять инновационные ИТ-продукты.</p>
+            
+            <div class="accordion">
+                <button class="accordion-btn">Подробнее о программе <i class="fas fa-chevron-down"></i></button>
+                <div class="accordion-content">
+                    <p>Программа готовит специалистов, способных к аналитическому мышлению, разработке бизнес-решений и программного обеспечения, а также применению информационных технологий в бизнес-процессах. Выпускники могут найти работу в качестве бизнес-аналитиков, системных аналитиков, специалистов по внедрению ERP-систем, IT-консультантов и менеджеров IT-проектов.</p>
+                </div>
+            </div>
+            
+            <div class="lession_cont">
+                <div class="lession_box">
+                    <h4 class="h_less"><i class="fas fa-book-open"></i> Учебные дисциплины:</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check-circle"></i> Экономика</li>
+                        <li><i class="fas fa-check-circle"></i> Маркетинг</li>
+                        <li><i class="fas fa-check-circle"></i> Высокоуровневые языки программирования</li>
+                        <li><i class="fas fa-check-circle"></i> Операционные системы</li>
+                        <li><i class="fas fa-check-circle"></i> Компьютерные сети</li>
+                        <li><i class="fas fa-check-circle"></i> Базы данных</li>
+                    </ul>
+                </div>
+                <div class="lession_box">
+                    <h4 class="h_less"><i class="fas fa-tools"></i> Ключевые навыки:</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check-circle"></i> Анализ структуры компании и бизнес-процессов</li>
+                        <li><i class="fas fa-check-circle"></i> Планирование ресурсов предприятия</li>
+                        <li><i class="fas fa-check-circle"></i> Моделирование бизнес-процессов</li>
+                        <li><i class="fas fa-check-circle"></i> Разработка IT-решений для бизнеса</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 BOYAREN. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('mobile-menu-open');
+        });
+
+        // Аккордеон
+        const accordionBtns = document.querySelectorAll('.accordion-btn');
+        accordionBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

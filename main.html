@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница ITRZN</title>
+    <link rel="stylesheet" href="style_glav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-title">
+                <div class="logo">
+                    <img src="logo/system_11113922 (1).png" alt="Логотип ITRZN">
+                </div>
+                <div class="site-title">
+                    <h1>ITRZN</h1>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav-link active" href="main.html"><i class="fas fa-home"></i> Главная</a>
+                <a class="nav-link" href="glav-naprav.html"><i class="fas fa-code-branch"></i> Направления</a>
+                <a class="nav-link" href="glav-aby.html"><i class="fas fa-user-graduate"></i> Абитуриенту</a>
+                <a class="nav-link" href="404.html"><i class="fas fa-book-open"></i> База знаний</a>
+                <a class="nav-link" href="it-seg.html"><i class="fas fa-book-open"></i> IT-Cегодня</a>
+            </nav>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Добро пожаловать на ITRZN!</h2>
+            <p>Данный обзор (и подобные ему) является КРАТКОЙ справкой, которая сделана с целью формирования БАЗОВОГО представления о направлении. Для изучения БОЛЕЕ ПОДРОБНОЙ информации следует обратиться к КОНКРЕТНОМУ ВУЗу с конкретной образовательной программой, где описаны все тонкости и подробности по освоению какого-либо направления.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="tiles">
+            <div class="tile">
+                <h3><i class="fas fa-laptop-code"></i> Направления в IT</h3>
+                <p>Узнайте о различных направлениях в IT, которые предоставляют вузы России. Полный обзор специальностей и карьерных перспектив.</p>
+                <a href="glav-naprav.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-book-open"></i> База знаний</h3>
+                <p>Изучите полезные материалы, статьи и руководства для начинающих IT-специалистов. Все для вашего профессионального роста.</p>
+                <a href="glav-baza.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-graduation-cap"></i> Абитуриенту</h3>
+                <p>Всё, что нужно знать абитуриентам для поступления в IT-вузы и начала карьеры в IT. Советы, рекомендации и полезные ресурсы.</p>
+                <a href="glav-aby.html" class="tile-link">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 BOYAREN. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('mobile-menu-open');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

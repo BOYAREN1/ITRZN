@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница ITRZN</title>
+    <link rel="stylesheet" href="style_glav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-title">
+                <div class="logo">
+                    <img src="logo/system_11113922 (1).png" alt="Логотип ITRZN">
+                </div>
+                <div class="site-title">
+                    <h1>ITRZN</h1>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="main.html"><i class="fas fa-home"></i> Главная</a>
+                <a class="nav-link active" href="glav-naprav.html"><i class="fas fa-code-branch"></i> Направления</a>
+                <a class="nav-link" href="glav-aby.html"><i class="fas fa-user-graduate"></i> Абитуриенту</a>
+                <a class="nav-link" href="404.html"><i class="fas fa-book-open"></i> База знаний</a>
+                <a class="nav-link" href="it-seg.html"><i class="fas fa-book-open"></i> IT-Cегодня</a>
+                
+            </nav>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Добро пожаловать на ITRZN!</h2>
+            <p>Данный обзор (и подобные ему) является КРАТКОЙ справкой, которая сделана с целью формирования БАЗОВОГО представления о направлении. Для изучения БОЛЕЕ ПОДРОБНОЙ информации следует обратиться к КОНКРЕТНОМУ ВУЗу с конкретной образовательной программой, где описаны все тонкости и подробности по освоению какого-либо направления.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="tiles">
+            <div class="tile">
+                <h3><i class="fas fa-laptop-code"></i> Направления группы 09.00.00</h3>
+                <p>ИНФОРМАТИКА И ВЫЧИСЛИТЕЛЬНАЯ ТЕХНИКА</p>
+                <a href="09_00_00.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-microchip"></i> Направления группы 02.00.00</h3>
+                <p>КОМПЬЮТЕРНЫЕ И ИНФОРМАЦИОННЫЕ НАУКИ</p>
+                <a href="02_00_00.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-shield-alt"></i> Направления группы 10.00.00</h3>
+                <p>ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ</p>
+                <a href="10_00_00.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-chart-line"></i> Направление 38.03.05</h3>
+                <p>Бизнес-информатика</p>
+                <a href="38.03.05.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-cogs"></i> Направление 27.03.04</h3>
+                <p>Управление в технических системах</p>
+                <a href="27.03.04.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-network-wired"></i> Направление 11.03.02</h3>
+                <p>Инфокоммуникационные технологии и системы связи</p>
+                <a href="11.03.02.html" class="tile-link">Подробнее</a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 BOYAREN. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('mobile-menu-open');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

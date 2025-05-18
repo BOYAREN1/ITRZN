@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница ITRZN</title>
+    <link rel="stylesheet" href="style_glav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-title">
+                <div class="logo">
+                    <img src="logo/system_11113922 (1).png" alt="Логотип ITRZN">
+                </div>
+                <div class="site-title">
+                    <h1>ITRZN</h1>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="main.html"><i class="fas fa-home"></i> Главная</a>
+                <a class="nav-link" href="glav-naprav.html"><i class="fas fa-code-branch"></i> Направления</a>
+                <a class="nav-link" href="glav-aby.html"><i class="fas fa-user-graduate"></i> Абитуриенту</a>
+                <a class="nav-link" href="404.html"><i class="fas fa-book-open"></i> База знаний</a>
+                <a class="nav-link" href="it-seg.html"><i class="fas fa-book-open"></i> IT-Cегодня</a>
+            </nav>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Добро пожаловать на ITRZN!</h2>
+            <p>Исследуйте наследие советской науки, современные российские разработки и перспективы IT-инженерии. Узнайте какие языки программирования актуальны сегодня и как они применяются в разных профессиях.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="tiles">
+            <div class="tile">
+                <h3><i class="fas fa-atom"></i> Ученые СССР</h3>
+                <p>Откройте для себя великих советских ученых, чьи открытия заложили основы современной IT-индустрии и компьютерных технологий.</p>
+                <a href="sovet_sp.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-microscope"></i> Ученые России</h3>
+                <p>Познакомьтесь с современными российскими исследователями, продолжающими традиции научной школы в области информационных технологий.</p>
+                <a href="russia_sp.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-code"></i> Современные языки программирования</h3>
+                <p>Обзор самых востребованных языков программирования 2020-х годов, их особенности и области применения.</p>
+                <a href="#" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-laptop-code"></i> Языки программирования в профессиях</h3>
+                <p>Какие языки нужны для разных IT-специальностей: от веб-разработки до искусственного интеллекта.</p>
+                <a href="otrasli.html" class="tile-link">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 BOYAREN. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('mobile-menu-open');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

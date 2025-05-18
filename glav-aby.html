@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абитуриенту | ITRZN</title>
+    <link rel="stylesheet" href="style_glav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .admission-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .step {
+            width: 48%;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .step h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #3498db;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #2c3e50;
+            cursor: pointer;
+        }
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .step {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-title">
+                <div class="logo">
+                    <img src="logo/system_11113922 (1).png" alt="Логотип ITRZN">
+                </div>
+                <div class="site-title">
+                    <h1>ITRZN</h1>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="main.html"><i class="fas fa-home"></i> Главная</a>
+                <a class="nav-link" href="glav-naprav.html"><i class="fas fa-code-branch"></i> Направления</a>
+                <a class="nav-link active" href="glav-aby.html"><i class="fas fa-user-graduate"></i> Абитуриенту</a>
+                <a class="nav-link" href="404.html"><i class="fas fa-book-open"></i> База знаний</a>
+                <a class="nav-link" href="it-seg.html"><i class="fas fa-book-open"></i> IT-Cегодня</a>
+            </nav>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Абитуриенту IT-направлений</h2>
+            <p>Всё, что нужно знать для поступления на IT-специальности: выбор направления, подготовка к экзаменам, проходные баллы и советы от студентов.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="tiles">
+            <div class="tile">
+                <h3><i class="fas fa-graduation-cap"></i> Выбор направления</h3>
+                <p>Как определиться с IT-специальностью? Сравнение направлений, перспективы и карьерные возможности.</p>
+                <a href="viz.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-book"></i> Подготовка к ЕГЭ</h3>
+                <p>Какие предметы сдавать? Как подготовиться к экзаменам? Полезные материалы и советы.</p>
+                <a href="abiturient/ege.html" class="tile-link">Подробнее</a>
+            </div>
+            <div class="tile">
+                <h3><i class="fas fa-university"></i> Топ IT-вузов</h3>
+                <p>Рейтинги учебных заведений, особенности поступления, бюджетные места и стоимость обучения.</p>
+                <a href="ball_viz.html" class="tile-link">Подробнее</a>
+            </div>
+        </div>
+
+        <section class="admission-guide">
+            <h2><i class="fas fa-map-signs"></i> Путеводитель абитуриента</h2>
+            <div class="admission-steps">
+                <div class="step">
+                    <h3><span class="step-number">1</span> Выбор специальности</h3>
+                    <p>Определитесь с направлением подготовки. Изучите учебные планы, перспективы трудоустройства и зарплатные ожидания.</p>
+                </div>
+                <div class="step">
+                    <h3><span class="step-number">2</span> Подготовка к экзаменам</h3>
+                    <p>Соберите информацию о необходимых ЕГЭ. Начните подготовку заранее, используя официальные источники.</p>
+                </div>
+                <div class="step">
+                    <h3><span class="step-number">3</span> Выбор вузов</h3>
+                    <p>Составьте список из 5-8 вузов с разным уровнем проходных баллов. Учитывайте местоположение и условия обучения.</p>
+                </div>
+                <div class="step">
+                    <h3><span class="step-number">4</span> Подача документов</h3>
+                    <p>Узнайте сроки подачи документов. Подготовьте необходимые справки и сертификаты заранее.</p>
+                </div>
+                <div class="step">
+                    <h3><span class="step-number">5</span> Дополнительные испытания</h3>
+                    <p>Некоторые вузы проводят собственные экзамены или собеседования. Уточните эту информацию заранее.</p>
+                </div>
+                <div class="step">
+                    <h3><span class="step-number">6</span> Зачисление</h3>
+                    <p>Следите за конкурсными списками. Своевременно предоставляйте оригиналы документов.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2><i class="far fa-question-circle"></i> Частые вопросы</h2>
+            <div class="faq-item">
+                <div class="faq-question">Какие ЕГЭ нужны для поступления на IT-специальности?</div>
+                <div class="faq-answer">
+                    <p>Чаще всего требуется:</p>
+                    <ul>
+                        <li>Математика (профиль) - обязательный предмет</li>
+                        <li>Информатика - основной предмет для IT-направлений</li>
+                        <li>Русский язык - обязательный для всех специальностей</li>
+                        <li>Физика или иностранный язык - дополнительно в некоторых вузах</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Какой минимальный балл для поступления на бюджет?</div>
+                <div class="faq-answer">
+                    <p>Проходные баллы сильно варьируются в зависимости от вуза:</p>
+                    <ul>
+                        <li>Топовые вузы (МФТИ, ВШЭ, МГУ) - от 280+ баллов за 3 экзамена</li>
+                        <li>Региональные университеты - от 200 баллов</li>
+                        <li>Средние технические вузы - 220-250 баллов</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Нужно ли уметь программировать перед поступлением?</div>
+                <div class="faq-answer">
+                    <p>Не обязательно, но желательно:</p>
+                    <ul>
+                        <li>Базовые знания дадут преимущество при обучении</li>
+                        <li>Некоторые вузы учитывают портфолио с проектами</li>
+                        <li>Олимпиадникам проще учиться на первых курсах</li>
+                        <li>Но большинство программ рассчитаны на обучение с нуля</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 BOYAREN. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('mobile-menu-open');
+        });
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.classList.toggle('show');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

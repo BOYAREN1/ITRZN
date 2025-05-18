@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена | ITRZN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style_glav.css">
+    <style>
+        /* Дополнительные стили для страницы 404 */
+        .error-container {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+        
+        .error-description {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .error-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .error-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .error-btn.secondary {
+            background-color: white;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        
+        .error-btn.secondary:hover {
+            background-color: var(--light-gray);
+        }
+        
+        /* Стили для мема "О, как!" */
+        .meme-cat {
+            max-width: 300px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .meme-text {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 2rem;
+            color: #000000;
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 80px;
+            }
+            
+            .error-title {
+                font-size: 1.8rem;
+            }
+            
+            .error-description {
+                font-size: 1rem;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .error-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .meme-text {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-title">
+                <div class="logo">
+                    <img src="logo/system_11113922 (1).png" alt="Логотип ITRZN">
+                </div>
+                <div class="site-title">
+                    <h1>ITRZN</h1>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="main.html"><i class="fas fa-home"></i> Главная</a>
+                <a class="nav-link" href="glav-naprav.html"><i class="fas fa-code-branch"></i> Направления</a>
+                <a class="nav-link" href="glav-aby.html"><i class="fas fa-user-graduate"></i> Абитуриенту</a>
+                <a class="nav-link" href="404.html"><i class="fas fa-book-open"></i> База знаний</a>
+                <a class="nav-link" href="it-seg.html"><i class="fas fa-book-open"></i> IT-Cегодня</a>
+            </nav>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <h1 class="error-title">О, как! Страница пропала!</h1>
+            
+            <img src="https://forum.nextrp.ru/data/attachments/302/302447-83905c562b25006a88863d2ce0e0c81c.jpg" alt="Мем 'О, как!'" class="meme-cat">
+            <div class="meme-text">О, как! 404!</div>
+            
+            <p class="error-description">
+                К сожалению, запрашиваемая вами страница не существует или была перемещена. 
+                Возможно, вы ошиблись при вводе адреса или перешли по неработающей ссылке.
+            </p>
+            
+            <div class="error-actions">
+                <a href="main.html" class="error-btn">
+                    <i class="fas fa-home"></i> На главную
+                </a>
+                <a href="glav-naprav.html" class="error-btn secondary">
+                    <i class="fas fa-code-branch"></i> Направления в IT
+                </a>
+                <a href="mailto:aamblack05@gmail.com" class="error-btn secondary">
+                    <i class="fas fa-envelope"></i> Сообщить о проблеме
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 BOYAREN. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('mobile-menu-open');
+        });
+    </script>
+</body>
+</html>
